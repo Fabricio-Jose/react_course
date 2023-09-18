@@ -1,0 +1,75 @@
+.tarjeta-twitter {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: .8rem;
+  justify-content: space-between;
+}
+
+.tarjeta-twitter-header {
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+
+.tarjeta-twitter-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-twitter-infoUserName {
+  opacity: .6;
+}
+
+.tarjeta-twitter-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.tarjeta-twitter-button {
+  cursor: pointer;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  border: 1px solid #000;
+  transition: .3s ease background-color;
+}
+
+.tarjeta-twitter-button:hover {
+  opacity: .8;
+  background-color: #09f;
+}
+
+.tarjeta-twitter-text {
+  display: block;
+}
+
+.tarjeta-twitter-button.is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+  width: 140px;
+}
+
+.tarjeta-twitter-button.is-following:hover {
+  background-color: rgba(255, 0, 0, 0.178);
+  color: red;
+  border: 1px solid red;
+  transition: .3s ease all;
+  opacity: 1;
+}
+
+.tarjeta-twitter-button.is-following:hover .tarjeta-twitter-text {
+  display: none;
+}
+
+.tarjeta-twitter-button.is-following:hover .tarjeta-twitter-stopFollow {
+  display: block;
+}
+
+.tarjeta-twitter-stopFollow {
+  display: none;
+}
